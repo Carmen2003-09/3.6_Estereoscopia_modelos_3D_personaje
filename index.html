@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Lost Path - Escenario Ciudad</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+  <link type="text/css" rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <div id="info">
+    Personaje 3D - Animación Hip Hop Dancing<br />
+    Vista en tercera persona desde atrás
+  </div>
+  <button id="vrButton">VR</button>
+  <div id="container"></div>
+
+  <!-- Importmap -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./build/three.module.js",
+        "three/addons/": "./jsm/"
+      }
+    }
+  </script>
+
+  <!-- JS principal -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

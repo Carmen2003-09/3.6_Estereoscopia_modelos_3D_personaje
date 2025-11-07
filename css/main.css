@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#info {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+}
+
+#vrButton {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  min-width: 60px;
+  min-height: 44px; /* Tamaño mínimo recomendado para móviles */
+}
+
+#vrButton:hover {
+  background-color: #45a049;
+}
+
+#vrButton:active {
+  background-color: #3d8b40;
+}
+
+#vrButton.active {
+  background-color: #f44336;
+}
+
+#vrButton.active:hover {
+  background-color: #da190b;
+}
